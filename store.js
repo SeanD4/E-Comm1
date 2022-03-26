@@ -1,7 +1,3 @@
-// if (document.readyState == 'complete') {
-// } else {
-//     ready()
-// }
 
 document.addEventListener("DOMContentLoaded", ready);
 
