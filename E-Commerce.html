@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Store</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="store.js" async></script>
+</head>
+
+<body>
+  <header>
+  </header>
+  <div class="bg vh-100 card-con">
+    <div class="container-fluid con-adj">
+
+      <div class="container">
+        <section class="container content-section">
+          <div class="row row-cols-1 row-cols-md-3">
+            <div class="col">
+              <div class="card h-100">
+                <img class="img"
+                  src="https://www.dailyherald.com/storyimage/DA/20191007/SUBMITTED/191009287/AR/0/AR-191009287.jpg&updated=201910080744&MaxW=900&maxH=900&noborder&Q=80"
+                  class="card-img-top item-image" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Columbian Roast</h5>
+                  <p class="card-text">The Ol' Reliable. A cultural favorite amongst many coffee drinkers. Always a safe
+                    selection.</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="btn btn-primary btn-md btn-add btn-adj">$9.99</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img"
+                  src="https://www.cancer.org/content/dam/cancer-org/images/photographs/single-use/espresso-coffee-cup-with-beans-on-table-restricted.jpg"
+                  class="card-img-top item-image" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">French Roast</h5>
+                  <p class="card-text">Premium Blend for all coffee lovers!</p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="btn btn-primary btn-md btn-add">$19.99</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img class="img"
+                  src="https://media.cnn.com/api/v1/images/stellar/prod/200804091449-coffeeinside.jpg?q=x_2,y_0,h_956,w_1698,c_crop/h_270,w_480"
+                  class="card-img-top item-image" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mocha Java Coffee</h5>
+                  <p class="card-text">Premium Arabian Coffee from naturally cultivated beans. Holds title of the
+                    world's oldest.</p>
+                </div>
+                <div class="d-flex justify-content-center btn-add">
+                  <button type="button" class="btn btn-primary btn-md btn-add">$14.99</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="container total-section">
+          <h2 class="section-header">CART</h2>
+          <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+          </div>
+          <div class="cart-items">
+            <div class="cart-row">
+              <div class="cart-item cart-column">
+                <img class="cart-item-image"
+                  src="https://www.dailyherald.com/storyimage/DA/20191007/SUBMITTED/191009287/AR/0/AR-191009287.jpg&updated=201910080744&MaxW=900&maxH=900&noborder&Q=80">
+                <span class="cart-item-title">Columbian Roast</span>
+              </div>
+              <span class="cart-price cart-column">$9.99</span>
+              <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger" type="button">Remove</button>
+              </div>
+            </div>
+            <div class="cart-row">
+              <div class="cart-item cart-column">
+                <img class="cart-item-image"
+                  src="https://www.cancer.org/content/dam/cancer-org/images/photographs/single-use/espresso-coffee-cup-with-beans-on-table-restricted.jpg">
+                <span class="cart-item-title">French Roast</span>
+              </div>
+              <span class="cart-price cart-column">$19.99</span>
+              <div class="cart-quantity cart-column">
+                <input class="cart-quantity-input" type="number" value="1">
+                <button class="btn btn-danger" type="button">Remove</button>
+              </div>
+            </div>
+          </div>
+          <div class="cart-total">
+            <strong class="cart-total-total">Total</strong>
+            <span class="cart-total-price"></span>
+          </div>
+          <button class="btn btn-primary btn-purchase" type="button">BUY</button>
+        </section>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

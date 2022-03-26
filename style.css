@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bg {
+    background-image: url('coffeebg.jpeg');
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.con-adj {
+    padding-top: 225px;
+}
+.btn{
+    margin-bottom: 10px;
+}
+img {
+    height: 197px;
+}
+
+.cart-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.total-section{
+margin: 15px;
+color: #fff;
+background: rgb(85, 48, 6);
+border-radius: 10px;
+}
+.cart-row {
+    margin: 10px;
+}
+
+.cart-item-title {
+    margin: 0px 5px;
+}
+.cart-item-image {
+    height: 75px;
+    width: 75px;
+}
