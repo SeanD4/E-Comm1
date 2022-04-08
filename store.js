@@ -66,9 +66,9 @@ function ready() {
         </div>
     `;
           newCartRow.innerHTML = newRowContent;
+         
           cartItemsElement.append(newCartRow);
         });
-
         const totalPrice = cartItems.reduce((a, c) => {
           console.log("acc:", a);
           console.log("val:", c);
@@ -84,18 +84,22 @@ function ready() {
         const cartItemElements = Array.from(
           document.querySelectorAll(".cart-items .cart-row.w-100")
         );
-
-        console.log("elements", cartItemElements);
-        
         cartItemElements.forEach((element) => {
           const qtyElement = element.querySelector(".cart-quantity-input");
 
           qtyElement.addEventListener("change", (e) => {
-            console.log("qty element", e.target.value);
+            qty = e.target.value
+            
+            
           });
-
+          console.log("input value", qty);
+          console.log("qty element", qtyElement);
           console.log("element", element);
+          console.log("elements", cartItemElements);
         });
+        
+        
+     
       }
     });
   });
@@ -122,4 +126,9 @@ function removeCartItem(event, id) {
   clickedButton.parentElement.parentElement.remove();
 }
 
-function quantityChanged(event) {}
+function quantityChanged(event) {
+  var input = event.target
+  if (isNaN(input.value) || input.value <= 0)  {
+    input.value = 1
+  }
+}
